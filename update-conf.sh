@@ -1,8 +1,5 @@
 #!/bin/bash
 
-eval $(ssh-agent)
-ssh-add /home/ubuntu/.ssh/github
-
 git pull
 
 rm /home/ubuntu/.ssh/authorized_keys
