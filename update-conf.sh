@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ -z "$1" ]; then
+    echo "[ERROR] Provide environement (dev, staging, live)"
+    exit 1
+fi
+
 echo "[INFO] Pulling last public keys..."
 git pull
 
